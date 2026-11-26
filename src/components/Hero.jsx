@@ -58,8 +58,8 @@ export default function Hero() {
     },
     {
       icon: ShieldCheck,
-      label: 'Ubicación real',
-      value: 'Vía a Turbana',
+      label: 'Áreas de lotes',
+      value: '78 a 203,70 m²',
       sub: `Lotes desde ${formatCOP(lowestPrice)}*`,
     },
   ];

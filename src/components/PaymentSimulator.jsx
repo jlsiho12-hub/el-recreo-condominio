@@ -99,8 +99,9 @@ export default function PaymentSimulator({ onSelectSimulation }) {
             <span className="italic text-bronze-600">segundos</span>
           </h2>
           <p className="mt-3 text-sm sm:text-base text-palm-900/70">
-            Lotes desde <strong className="text-palm-900">{formatCOP(startingPrice)}*</strong>. Elige tu
-            modalidad de pago y el número de cuotas hasta {maxInstallments} meses.
+            Lotes desde <strong className="text-palm-900">78 m² hasta 203,70 m²</strong> (valor
+            referencial desde <strong className="text-palm-900">{formatCOP(startingPrice)}*</strong>).
+            Elige tu modalidad de pago y plazo hasta {maxInstallments} cuotas.
           </p>
         </motion.div>
 
