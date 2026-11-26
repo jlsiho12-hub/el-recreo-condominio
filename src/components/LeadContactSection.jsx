@@ -197,7 +197,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                 </div>
               </div>
 
-              <div className="pt-3 border-t border-white/10 flex items-center gap-2 text-xs text-emerald-300">
+              <div className="pt-3 border-t border-beige-300/15 flex items-center gap-2 text-xs text-beige-300">
                 <ShieldCheck size={16} />
                 <span>Formulario preparado para integración directa con SmartHome CRM</span>
               </div>
@@ -219,7 +219,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                   animate={{ opacity: 1, scale: 1 }}
                   className="text-center py-8"
                 >
-                  <div className="w-16 h-16 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto mb-4">
+                  <div className="w-16 h-16 rounded-full bg-olive-500/15 text-olive-600 flex items-center justify-center mx-auto mb-4">
                     <CheckCircle2 size={34} />
                   </div>
                   <h3 className="font-serif text-3xl font-semibold text-palm-900">
@@ -235,7 +235,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                       href={directWhatsAppFromForm}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-emerald-600 text-white font-semibold text-sm hover:bg-emerald-700 transition-colors"
+                      className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-full bg-gradient-to-r from-bronze-600 to-olive-500 text-white font-semibold text-sm shadow-bronze hover:brightness-110 transition-all"
                     >
                       <MessageCircle size={18} />
                       <span>Continuar por WhatsApp ahora</span>
@@ -275,7 +275,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="lead-name" className="block text-xs font-semibold text-palm-900/80 mb-1.5">
+                      <label htmlFor="lead-name" className="block text-xs font-semibold text-palm-900/85 mb-1.5">
                         Nombre completo *
                       </label>
                       <input
@@ -285,12 +285,12 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                         value={form.fullName}
                         onChange={(e) => setForm({ ...form, fullName: e.target.value })}
                         placeholder="Ej: Carlos Mendoza"
-                        className="w-full rounded-xl border border-sand-300 bg-sand-50/50 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                        className="w-full rounded-xl border border-sand-200 bg-sand-100/75 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-olive-500"
                       />
                     </div>
 
                     <div>
-                      <label htmlFor="lead-email" className="block text-xs font-semibold text-palm-900/80 mb-1.5">
+                      <label htmlFor="lead-email" className="block text-xs font-semibold text-palm-900/85 mb-1.5">
                         Correo electrónico
                       </label>
                       <input
@@ -299,14 +299,14 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                         value={form.email}
                         onChange={(e) => setForm({ ...form, email: e.target.value })}
                         placeholder="tu@correo.com"
-                        className="w-full rounded-xl border border-sand-300 bg-sand-50/50 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                        className="w-full rounded-xl border border-sand-200 bg-sand-100/75 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-olive-500"
                       />
                     </div>
                   </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <div>
-                      <label htmlFor="lead-phone" className="block text-xs font-semibold text-palm-900/80 mb-1.5">
+                      <label htmlFor="lead-phone" className="block text-xs font-semibold text-palm-900/85 mb-1.5">
                         Teléfono / WhatsApp *
                       </label>
                       <div className="flex gap-2">
@@ -314,7 +314,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                           aria-label="Indicativo de país"
                           value={form.countryCode}
                           onChange={(e) => setForm({ ...form, countryCode: e.target.value })}
-                          className="rounded-xl border border-sand-300 bg-sand-50 px-2.5 py-3 text-xs sm:text-sm font-semibold text-palm-900 focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                          className="rounded-xl border border-sand-200 bg-sand-100 px-2.5 py-3 text-xs sm:text-sm font-semibold text-palm-900 focus:outline-none focus:ring-2 focus:ring-olive-500"
                         >
                           {COUNTRY_CODES.map((c) => (
                             <option key={c.code} value={c.code}>
@@ -329,20 +329,20 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                           value={form.phone}
                           onChange={(e) => setForm({ ...form, phone: e.target.value })}
                           placeholder="300 123 4567"
-                          className="w-full rounded-xl border border-sand-300 bg-sand-50/50 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                          className="w-full rounded-xl border border-sand-200 bg-sand-100/75 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-olive-500"
                         />
                       </div>
                     </div>
 
                     <div>
-                      <label htmlFor="lead-plan" className="block text-xs font-semibold text-palm-900/80 mb-1.5">
+                      <label htmlFor="lead-plan" className="block text-xs font-semibold text-palm-900/85 mb-1.5">
                         Modalidad de pago de interés
                       </label>
                       <select
                         id="lead-plan"
                         value={form.financingPreference}
                         onChange={(e) => setForm({ ...form, financingPreference: e.target.value })}
-                        className="w-full rounded-xl border border-sand-300 bg-sand-50/50 px-3.5 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                        className="w-full rounded-xl border border-sand-200 bg-sand-100/75 px-3.5 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-olive-500"
                       >
                         <option value="Sin cuota inicial (Separación $2.000.000)">
                           Sin cuota inicial · Separación $2M (60 cuotas)
@@ -358,7 +358,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                   </div>
 
                   <div>
-                    <label htmlFor="lead-msg" className="block text-xs font-semibold text-palm-900/80 mb-1.5">
+                    <label htmlFor="lead-msg" className="block text-xs font-semibold text-palm-900/85 mb-1.5">
                       Mensaje o consulta (opcional)
                     </label>
                     <textarea
@@ -367,26 +367,26 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                       value={form.message}
                       onChange={(e) => setForm({ ...form, message: e.target.value })}
                       placeholder="Ej: Quiero agendar visita este fin de semana o conocer lotes disponibles."
-                      className="w-full rounded-xl border border-sand-300 bg-sand-50/50 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-bronze-500"
+                      className="w-full rounded-xl border border-sand-200 bg-sand-100/75 px-4 py-3 text-sm text-palm-900 focus:bg-white focus:outline-none focus:ring-2 focus:ring-olive-500"
                     />
                   </div>
 
                   {/* Mandatory Colombian Habeas Data Checkbox */}
-                  <div className="rounded-2xl bg-sand-50 border border-sand-200 p-4">
+                  <div className="rounded-2xl bg-sand-100 border border-sand-200 p-4">
                     <label className="flex items-start gap-3 cursor-pointer">
                       <input
                         type="checkbox"
                         checked={form.habeasData}
                         onChange={(e) => setForm({ ...form, habeasData: e.target.checked })}
-                        className="mt-1 h-4 w-4 rounded border-sand-300 text-bronze-600 focus:ring-bronze-500 accent-[#7A541C]"
+                        className="mt-1 h-4 w-4 rounded border-sand-300 text-bronze-600 focus:ring-olive-500 accent-[#7B5832]"
                       />
-                      <span className="text-xs text-palm-900/75 leading-relaxed">
+                      <span className="text-xs text-palm-900/80 leading-relaxed">
                         Autorizo de manera previa, expresa e informada el tratamiento de mis datos
                         personales conforme a la{' '}
                         <button
                           type="button"
                           onClick={() => onOpenLegal('policy')}
-                          className="font-semibold text-bronze-700 underline hover:text-bronze-800"
+                          className="font-semibold text-bronze-600 underline hover:text-bronze-700"
                         >
                           Política de Tratamiento de Datos (Ley 1581 de 2012)
                         </button>{' '}
@@ -394,7 +394,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                         <button
                           type="button"
                           onClick={() => onOpenLegal('notice')}
-                          className="font-semibold text-bronze-700 underline hover:text-bronze-800"
+                          className="font-semibold text-bronze-600 underline hover:text-bronze-700"
                         >
                           Aviso de Privacidad
                         </button>{' '}
@@ -411,11 +411,12 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
 
                   <div className="flex flex-col sm:flex-row gap-3 pt-1">
                     <motion.button
-                      whileHover={{ y: -2 }}
+                      whileHover={{ y: -2, scale: 1.01 }}
                       whileTap={{ scale: 0.98 }}
+                      transition={{ type: 'spring', stiffness: 360, damping: 24 }}
                       type="submit"
                       disabled={status === 'submitting'}
-                      className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-bronze-600 via-bronze-500 to-bronze-400 text-white font-semibold text-sm sm:text-base shadow-bronze hover:brightness-110 disabled:opacity-60 transition-all"
+                      className="flex-1 inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-gradient-to-r from-bronze-600 to-olive-500 text-white font-semibold text-sm sm:text-base shadow-bronze hover:brightness-110 disabled:opacity-60 transition-all"
                     >
                       <Send size={17} />
                       <span>
@@ -431,7 +432,7 @@ export default function LeadContactSection({ simulationContext, onOpenLegal }) {
                       rel="noopener noreferrer"
                       className="inline-flex items-center justify-center gap-2 px-6 py-4 rounded-full bg-palm-900 text-white font-semibold text-sm hover:bg-palm-800 transition-colors"
                     >
-                      <MessageCircle size={17} className="text-emerald-400" />
+                      <MessageCircle size={17} className="text-beige-300" />
                       <span>WhatsApp directo</span>
                     </a>
                   </div>

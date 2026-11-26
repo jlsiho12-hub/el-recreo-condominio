@@ -249,19 +249,19 @@ export default function ProjectHighlights() {
 
                   {/* Narrative Card */}
                   <div className={`lg:col-span-5 ${reversed ? 'lg:order-1' : ''}`}>
-                    <span className="font-serif text-5xl sm:text-6xl font-bold text-bronze-400/40 leading-none">
+                    <span className="font-serif text-5xl sm:text-6xl font-bold text-beige-300/75 leading-none">
                       {item.num}.
                     </span>
                     <h3 className="font-serif text-2xl sm:text-4xl font-semibold text-white mt-2 leading-snug">
                       {item.title}
                     </h3>
-                    <p className="mt-4 text-white/75 text-sm sm:text-base leading-relaxed">
+                    <p className="mt-4 text-white/85 text-sm sm:text-base leading-relaxed">
                       {item.desc}
                     </p>
                     <ul className="mt-6 space-y-2.5">
                       {item.highlights.map((h) => (
-                        <li key={h} className="flex items-center gap-2.5 text-sm text-sand-100">
-                          <span className="w-2 h-2 rounded-full bg-bronze-400 shrink-0" />
+                        <li key={h} className="flex items-center gap-2.5 text-sm text-beige-100">
+                          <span className="w-2 h-2 rounded-full bg-olive-400 shrink-0" />
                           <span>{h}</span>
                         </li>
                       ))}
@@ -273,9 +273,9 @@ export default function ProjectHighlights() {
           </div>
 
           {/* Amenities Glassy Grid */}
-          <div className="mt-20 pt-16 border-t border-white/10">
+          <div className="mt-20 pt-16 border-t border-beige-300/15">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              <span className="text-xs font-bold uppercase tracking-[0.26em] text-bronze-300">
+              <span className="text-xs font-bold uppercase tracking-[0.26em] text-beige-300">
                 Calidad de Vida
               </span>
               <h3 className="font-serif text-3xl sm:text-4xl font-semibold text-white mt-2">
@@ -288,18 +288,18 @@ export default function ProjectHighlights() {
                 return (
                   <motion.div
                     key={am.title}
-                    initial={{ opacity: 0, y: 16 }}
+                    initial={{ opacity: 0, y: 18 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     viewport={{ once: true }}
-                    transition={{ duration: 0.4, delay: idx * 0.04 }}
-                    whileHover={{ y: -4 }}
-                    className="rounded-2xl bg-white/[0.06] border border-white/12 p-4 sm:p-5 hover:border-bronze-400/50 transition-colors"
+                    transition={{ type: 'spring', stiffness: 260, damping: 24, delay: idx * 0.04 }}
+                    whileHover={{ y: -5, scale: 1.01 }}
+                    className="rounded-2xl bg-white/[0.08] border border-beige-300/20 p-4 sm:p-5 hover:border-beige-300/50 transition-colors"
                   >
-                    <div className="w-10 h-10 rounded-xl bg-bronze-500/20 border border-bronze-300/25 flex items-center justify-center text-bronze-300 mb-3">
+                    <div className="w-10 h-10 rounded-xl bg-olive-500/25 border border-beige-300/30 flex items-center justify-center text-beige-300 mb-3">
                       <Icon size={19} />
                     </div>
                     <h4 className="font-semibold text-sm sm:text-base text-white">{am.title}</h4>
-                    <p className="text-xs text-white/65 mt-1 leading-relaxed">{am.desc}</p>
+                    <p className="text-xs text-white/80 mt-1 leading-relaxed">{am.desc}</p>
                   </motion.div>
                 );
               })}

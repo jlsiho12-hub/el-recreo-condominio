@@ -80,7 +80,7 @@ export default function PaymentSimulator({ onSelectSimulation }) {
   };
 
   return (
-    <section id="simulador" className="relative py-20 sm:py-28 bg-sand-50 topo-bg">
+    <section id="simulador" className="relative py-20 sm:py-28 bg-sand-100/80 topo-bg border-y border-sand-200/80">
       <div className="max-w-5xl mx-auto px-4 sm:px-6">
         {/* Clean Centered Header */}
         <motion.div
@@ -236,49 +236,50 @@ export default function PaymentSimulator({ onSelectSimulation }) {
               </div>
             </div>
 
-            {/* RIGHT: Warm Espresso-Bronze Result Card (Clean, Zero Clutter) */}
+            {/* RIGHT: Warm Espresso-Bronze Result Card (High Contrast & Kinetic Feedback) */}
             <div className="lg:col-span-5">
-              <div className="rounded-3xl bg-gradient-to-br from-palm-900 via-palm-950 to-bronze-800/90 text-white p-6 sm:p-7 border border-bronze-400/25 shadow-glass">
-                <p className="text-[11px] font-bold uppercase tracking-[0.2em] text-bronze-300">
+              <div className="rounded-3xl bg-gradient-to-br from-palm-900 via-palm-950 to-bronze-800 text-white p-6 sm:p-7 border border-beige-300/30 shadow-glass">
+                <p className="text-[11px] font-bold uppercase tracking-[0.22em] text-beige-300">
                   Tu cuota mensual estimada
                 </p>
 
                 <motion.p
                   key={`${calc.monthly}-${mode}-${months}`}
-                  initial={{ opacity: 0.45, y: 5 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.18 }}
+                  initial={{ opacity: 0.5, scale: 0.96, y: 4 }}
+                  animate={{ opacity: 1, scale: 1, y: 0 }}
+                  transition={{ type: 'spring', stiffness: 360, damping: 26 }}
                   className="font-serif text-4xl sm:text-5xl font-bold text-white mt-2 tracking-tight tabular-nums"
                 >
                   {formatCOP(calc.monthly)}
-                  <span className="font-sans text-sm font-normal text-white/60"> / mes</span>
+                  <span className="font-sans text-sm font-normal text-beige-200"> / mes</span>
                 </motion.p>
 
-                <div className="mt-6 space-y-3 border-t border-white/12 pt-5 text-sm">
+                <div className="mt-6 space-y-3 border-t border-beige-300/20 pt-5 text-sm">
                   <div className="flex justify-between gap-2">
-                    <span className="text-white/65">Valor del lote</span>
-                    <span className="font-semibold tabular-nums">{formatCOP(lotPrice)}</span>
+                    <span className="text-white/80">Valor del lote</span>
+                    <span className="font-semibold text-white tabular-nums">{formatCOP(lotPrice)}</span>
                   </div>
                   <div className="flex justify-between gap-2">
-                    <span className="text-white/65">{calc.upfrontLabel}</span>
-                    <span className="font-semibold text-bronze-300 tabular-nums">
+                    <span className="text-white/80">{calc.upfrontLabel}</span>
+                    <span className="font-semibold text-beige-300 tabular-nums">
                       {formatCOP(calc.upfront)}
                     </span>
                   </div>
                   <div className="flex justify-between gap-2">
-                    <span className="text-white/65">Saldo en {months} cuotas</span>
-                    <span className="font-semibold tabular-nums">{formatCOP(calc.balance)}</span>
+                    <span className="text-white/80">Saldo en {months} cuotas</span>
+                    <span className="font-semibold text-white tabular-nums">{formatCOP(calc.balance)}</span>
                   </div>
                 </div>
 
                 <div className="mt-7 space-y-2.5">
                   <motion.a
-                    whileHover={{ y: -2 }}
+                    whileHover={{ y: -2, scale: 1.01 }}
                     whileTap={{ scale: 0.98 }}
+                    transition={{ type: 'spring', stiffness: 360, damping: 24 }}
                     href={whatsappUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-gradient-to-r from-bronze-600 via-bronze-500 to-bronze-400 text-white font-semibold text-sm shadow-bronze hover:brightness-110 transition-all"
+                    className="w-full inline-flex items-center justify-center gap-2 px-5 py-3.5 rounded-full bg-gradient-to-r from-bronze-600 to-olive-500 text-white font-semibold text-sm shadow-bronze hover:brightness-110 transition-all"
                   >
                     <MessageCircle size={18} />
                     <span>Quiero este plan por WhatsApp</span>
@@ -287,7 +288,7 @@ export default function PaymentSimulator({ onSelectSimulation }) {
                   <button
                     type="button"
                     onClick={handleLockSimulation}
-                    className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 text-xs font-semibold text-sand-200 hover:text-white transition-colors"
+                    className="w-full inline-flex items-center justify-center gap-1.5 py-2.5 text-xs font-semibold text-beige-200 hover:text-white transition-colors"
                   >
                     <Send size={13} />
                     <span>O enviar al formulario de contacto</span>
@@ -295,7 +296,7 @@ export default function PaymentSimulator({ onSelectSimulation }) {
                   </button>
                 </div>
 
-                <p className="text-[11px] text-white/45 text-center mt-3">
+                <p className="text-[11px] text-white/65 text-center mt-3">
                   *Estimación referencial sujeta a disponibilidad y condiciones en sala de ventas.
                 </p>
               </div>
