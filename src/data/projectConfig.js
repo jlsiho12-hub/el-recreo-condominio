@@ -30,10 +30,10 @@ export const PROJECT_CONFIG = {
     salesRoomAddress: 'Turbaco, Vía a Turbana, Bolívar, Colombia',
     instagramUrl: 'https://instagram.com/',
     facebookUrl: 'https://facebook.com/',
-    mapsUrl: 'https://www.google.com/maps/search/?api=1&query=Turbaco+Via+a+Turbana+Bolivar+Colombia',
-    // Iframe gratuito de Google Maps (puedes reemplazar por el embed exacto del pin del lote)
+    mapsUrl: 'https://maps.app.goo.gl/RnFb21Sk155QBmo3A',
+    // Iframe gratuito de Google Maps apuntando exactamente al pin real del proyecto (10.321868, -75.4262723)
     mapsEmbedUrl:
-      'https://maps.google.com/maps?q=Turbaco,%20Bol%C3%ADvar,%20Colombia&t=k&z=14&ie=UTF8&iwloc=&output=embed',
+      'https://maps.google.com/maps?q=10.321868,-75.4262723&t=k&z=16&ie=UTF8&iwloc=&output=embed',
   },
 
   /**

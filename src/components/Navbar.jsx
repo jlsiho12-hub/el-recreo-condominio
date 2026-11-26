@@ -31,44 +31,38 @@ export default function Navbar() {
         initial={{ y: -24, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.55, ease: [0.22, 1, 0.36, 1] }}
-        className={`pointer-events-auto mx-auto max-w-6xl rounded-full px-3 sm:px-5 py-2.5 flex items-center justify-between transition-all duration-300 ${
+        className={`pointer-events-auto mx-auto max-w-6xl rounded-full px-3 sm:px-5 py-2 flex items-center justify-between transition-all duration-300 ${
           scrolled
-            ? 'glass-light shadow-luxury border-bronze-600/20'
+            ? 'glass-light shadow-luxury border-olive-500/25'
             : 'glass-pill text-white'
         }`}
       >
-        {/* Brand Logo */}
+        {/* Prominent Brand Identity Pill (High Contrast Logo + Bigger Typography) */}
         <a
           href="#inicio"
-          className="flex items-center gap-2.5 pl-1 group focus:outline-none"
+          className="flex items-center gap-3 group focus:outline-none"
           aria-label="Inicio El Recreo Condominio"
         >
           <div
-            className={`w-10 h-10 rounded-full flex items-center justify-center overflow-hidden p-1 transition-colors ${
-              scrolled ? 'bg-sand-100 border border-bronze-600/20' : 'bg-white/95 shadow-md'
+            className={`flex items-center gap-3 rounded-full px-3.5 py-1.5 transition-all ${
+              scrolled
+                ? 'bg-sand-100 border border-beige-300/60'
+                : 'bg-white shadow-md'
             }`}
           >
             <img
               src="/images/logo-el-recreo.png"
               alt="Logo El Recreo Condominio"
-              className="w-full h-full object-contain"
+              className="h-9 sm:h-10 w-auto object-contain"
             />
-          </div>
-          <div className="leading-tight">
-            <span
-              className={`block font-serif font-bold tracking-[0.14em] text-sm sm:text-base transition-colors ${
-                scrolled ? 'text-palm-900' : 'text-white'
-              }`}
-            >
-              EL RECREO
-            </span>
-            <span
-              className={`block text-[9px] tracking-[0.28em] uppercase font-semibold transition-colors ${
-                scrolled ? 'text-bronze-600' : 'text-bronze-300'
-              }`}
-            >
-              Condominio
-            </span>
+            <div className="hidden xs:block sm:block border-l border-beige-300/70 pl-3 leading-none">
+              <span className="block font-serif font-bold tracking-[0.12em] text-base sm:text-lg text-bronze-600">
+                EL RECREO
+              </span>
+              <span className="block text-[10px] tracking-[0.26em] uppercase font-bold text-olive-500 mt-0.5">
+                Condominio
+              </span>
+            </div>
           </div>
         </a>
 
@@ -80,8 +74,8 @@ export default function Navbar() {
                 href={item.href}
                 className={`px-3.5 py-2 rounded-full text-sm font-medium transition-all ${
                   scrolled
-                    ? 'text-palm-900/80 hover:text-bronze-700 hover:bg-bronze-600/10'
-                    : 'text-white/85 hover:text-white hover:bg-white/10'
+                    ? 'text-palm-900/85 hover:text-bronze-600 hover:bg-sand-100'
+                    : 'text-white/90 hover:text-white hover:bg-white/10'
                 }`}
               >
                 {item.label}
@@ -94,14 +88,14 @@ export default function Navbar() {
         <div className="flex items-center gap-2">
           <a
             href="#simulador"
-            className={`hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-full text-xs sm:text-sm font-semibold transition-all ${
+            className={`hidden sm:inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full text-xs sm:text-sm font-semibold transition-all ${
               scrolled
-                ? 'bg-sand-100 text-palm-900 hover:bg-sand-200 border border-bronze-600/15'
-                : 'bg-white/15 text-white hover:bg-white/25 border border-white/20'
+                ? 'bg-sand-100 text-bronze-600 hover:bg-beige-200/70 border border-beige-300/60'
+                : 'bg-white/15 text-white hover:bg-white/25 border border-beige-300/35'
             }`}
           >
             <Calculator size={15} />
-            <span>Simular cuota</span>
+            <span>Simulador</span>
           </a>
 
           <motion.a
@@ -110,10 +104,10 @@ export default function Navbar() {
             href={whatsappHeaderUrl}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r from-bronze-600 to-bronze-500 text-white shadow-bronze hover:brightness-110 transition-all"
+            className="inline-flex items-center gap-1.5 px-4 sm:px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold bg-gradient-to-r from-bronze-600 to-olive-500 text-white shadow-bronze hover:brightness-110 transition-all"
           >
             <MessageCircle size={15} />
-            <span className="hidden xs:inline">Cotizar</span>
+            <span>Hablemos</span>
           </motion.a>
 
           <button
@@ -121,7 +115,7 @@ export default function Navbar() {
             onClick={() => setMobileOpen((prev) => !prev)}
             className={`lg:hidden p-2 rounded-full transition-colors ${
               scrolled
-                ? 'text-palm-900 hover:bg-sand-200'
+                ? 'text-palm-900 hover:bg-sand-100'
                 : 'text-white hover:bg-white/15'
             }`}
             aria-label={mobileOpen ? 'Cerrar menú' : 'Abrir menú'}
@@ -155,7 +149,7 @@ export default function Navbar() {
               <a
                 href="#contacto"
                 onClick={() => setMobileOpen(false)}
-                className="mt-2 px-4 py-3 rounded-2xl text-sm font-semibold text-center bg-gradient-to-r from-bronze-600 to-bronze-500 text-white"
+                className="mt-2 px-4 py-3 rounded-2xl text-sm font-semibold text-center bg-gradient-to-r from-bronze-600 to-olive-500 text-white"
               >
                 Solicitar asesoría personalizada
               </a>
