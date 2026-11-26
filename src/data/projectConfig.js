@@ -108,6 +108,16 @@ export const PROJECT_CONFIG = {
   },
 
   /**
+   * SEO Y ANALÍTICA
+   * Configura el dominio definitivo y tus IDs de medición cuando los actives.
+   */
+  seo: {
+    siteUrl: 'https://elrecreocondominio.com',
+    ga4MeasurementId: '',
+    metaPixelId: '',
+  },
+
+  /**
    * CRÉDITOS DE DESARROLLO
    */
   developer: {

@@ -75,6 +75,8 @@ export default function Hero() {
           <img
             src="/images/porteria-recreo.jpg"
             alt="Portería monumental de El Recreo Condominio en Turbaco, Vía a Turbana"
+            fetchPriority="high"
+            decoding="async"
             className="w-full h-full object-cover object-center"
           />
           {/* Warm architectural espresso scrim for crystal-clear editorial typography */}
@@ -106,6 +108,9 @@ export default function Hero() {
               Aquí comienza{' '}
               <span className="italic text-beige-300 font-medium">
                 lo que soñaste.
+              </span>
+              <span className="sr-only">
+                {' '}— El Recreo Condominio: Lotes campestres en Turbaco, Vía a Turbana, Bolívar
               </span>
             </motion.h1>
 

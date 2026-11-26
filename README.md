@@ -31,3 +31,9 @@ npm run dev
 1. Sube este repositorio a **GitHub**.
 2. Conéctalo en **Vercel** o **Cloudflare Pages** (Framework Preset: `Vite`, Output Directory: `dist`).
 3. Cuando compres tu dominio (`.com`), conéctalo en el panel del hosting con SSL automático gratuito.
+
+## Checklist SEO para posicionar #1 en Google
+1. **Conecta tu dominio propio (`elrecreocondominio.com`)** en Vercel o Cloudflare Pages (los subdominios gratuitos no compiten igual que un `.com` oficial).
+2. **Envía el sitemap en Google Search Console:** verifica tu dominio y registra `https://elrecreocondominio.com/sitemap.xml` para indexación rápida.
+3. **Crea la ficha de Google Business Profile (Google Maps)** en el pin exacto de Turbaco (`10.321868, -75.4262723`, Vía a Turbana) enlazando hacia tu web y WhatsApp.
+4. **Impulsa autoridad local:** enlaza tu dominio desde Instagram, Facebook, portales inmobiliarios y pauta local para generar tráfico y menciones reales.

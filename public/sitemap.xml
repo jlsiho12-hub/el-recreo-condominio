@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1"
+>
+  <url>
+    <loc>https://elrecreocondominio.com/</loc>
+    <lastmod>2026-11-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://elrecreocondominio.com/images/porteria-recreo.jpg</image:loc>
+      <image:title>Portería Monumental El Recreo Condominio - Turbaco, Vía a Turbana</image:title>
+      <image:caption>Entrada principal en piedra travertino y bronce de El Recreo Condominio en Turbaco, Bolívar.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elrecreocondominio.com/images/bulevar-acceso.jpg</image:loc>
+      <image:title>Bulevar Principal Arborizado El Recreo Condominio</image:title>
+      <image:caption>Acceso vehicular y peatonal rodeado de palmas hacia el condominio campestre en Turbaco.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elrecreocondominio.com/images/plaza-comercial.jpg</image:loc>
+      <image:title>Plaza Comercial en Entrada de El Recreo Condominio</image:title>
+      <image:caption>Locales comerciales y zona de servicios integrada frente al proyecto en Vía a Turbana.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://elrecreocondominio.com/images/vista-aerea.jpg</image:loc>
+      <image:title>Vista Aérea Real El Recreo Condominio en Turbaco</image:title>
+      <image:caption>Panorámica del trazado vial y lotes campestres de 78 a 203,70 m² sobre la Vía a Turbana.</image:caption>
+    </image:image>
+  </url>
+</urlset>
